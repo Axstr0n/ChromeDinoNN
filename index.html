@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Dino NN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="title">Dino Neural Network</div>
+    <a href="https://axstr0n.github.io/Portfolio/" target="_blank" class="logo">
+        <img src="logo.png" alt="logo" srcset="">
+    </a>
+    <canvas id="canvas" style="width:100%;max-width:600px"></canvas>
+    <div id="info-controls">
+        <div id="info">
+            <div id="generation"></div>
+            <div id="highscore"></div>
+            <div id="players"></div>
+        </div>
+        <div id="controls">
+            <div class="local-storage-buttons">
+                <button id="eraseButton" onclick="eraseLocalStorage()">🗑️ Erase Local Storage</button>
+                <button id="saveButton" onclick="saveToLocalStorage()">💾 Save Current Brain to Local Storage</button>
+            </div>
+            <div class="toggle-buttons">
+                <button id="toggle-colliders">Toggle Colliders</button>
+                <button id="toggle-graphics" class="active">Toggle Graphics</button>
+                <button id="toggle-sensors">Toggle Sensors</button>
+            </div>
+            <div id="sliderContainer">
+                <div>Number of dinos</div>
+                <input type="range" id="dinosSlider" min="1" max="100" value="50">
+                <div id="sliderValue">50</div>
+            </div>
+        </div>
+    </div>
+    <div id="network-generation" style="max-width:600px;">
+        <div id="network-canvas-container">
+            <canvas id="network-canvas" style="width:100%;max-width:600px"></canvas>
+        </div>
+        <div id="generation-canvas-container" class="hide">
+            <canvas id="generation-canvas" style="width:100%;max-width:600px"></canvas>
+        </div>
+        <button id="toggle-network-generation">Network Visulizer</button>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/generationChart.js"></script>
+    <script src="js/network.js"></script>
+    <script src="js/networkVisualizer.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/airObstacle.js"></script>
+    <script src="js/groundObstacle.js"></script>
+    <script src="js/ground.js"></script>
+    <script src="js/sensor.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

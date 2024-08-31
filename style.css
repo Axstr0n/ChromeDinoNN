@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    min-width: 600px;
+    min-height: 600px;
+}
+body{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    min-width: 80%;
+}
+
+#title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    color: white;
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+    text-align: center;
+}
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 5px;
+}
+.logo img{
+    width: 98%;
+
+}
+#canvas{
+    background-color: rgb(24, 24, 24);
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#info-controls{
+    min-width: 600px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(24, 24, 24);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    font-weight: bold;
+}
+
+
+#controls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    cursor: pointer;
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+button.active{
+    background-color: rgb(79, 189, 28);
+}
+
+#eraseButton:hover{
+    background-color: rgba(202, 41, 41, 0.5);
+}
+#eraseButton:active{
+    background-color: rgba(202, 41, 41, 1);
+}
+#saveButton:hover{
+    background-color: rgba(32, 133, 216, 0.5);
+}
+#saveButton:active{
+    background-color: rgba(32, 133, 216, 1);
+}
+
+.toggle-buttons{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#sliderContainer{
+    display: flex;
+}
+#dinosSlider{
+    margin-right: 5px;
+    margin-left: 10px;
+}
+#sliderContainer{
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+#network-generation{
+    position: relative;
+    height: 300px;
+    width: 700px;
+    background-color: rgb(24, 24, 24);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#toggle-network-generation{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 120px;
+    padding: 3px;
+    font-weight: bold;
+}
+#network-canvas-container{
+    text-align: center;
+    height: 100%;
+}
+#network-canvas{
+    height: 100%;
+}
+
+#generation-canvas-container{
+    text-align: center;
+    height: 100%;
+}
+#generation-canvas{
+    height: 100%;
+    min-width: 100%;
+}
